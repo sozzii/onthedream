@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온더드림</title>
+
+    <script defer src="./js/common.js"></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="https://kit.fontawesome.com/b27b7a0908.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p>
+                <img src="./img/logo.png" data-animation-scroll="true" data-target="#main">
+            </p>
+            <nav>
+                <ul>
+                    <li data-animation-scroll="true" data-target="#about">소개</li>
+                    <li data-animation-scroll="true" data-target="#features">분양정보</li>
+                    <li data-animation-scroll="true" data-target="#qanda">공지사항</li>
+                    <li data-animation-scroll="true" data-target="#contact">고객문의</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="container">
+            <h4>Welcom</h4>
+            <h2>당신의 꿈을 꾸는 <span></span></h2>
+            <b><span>온더드림</span>입니다</b>
+            <button><i class="fa-solid fa-computer-mouse"></i></button>
+        </div>
+    </main>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="title">
+                <h2>On the Dream</h2>
+                <div class="about-self">
+                    <div class="left">
+                        <img src="./img/about_img.jpg">
+                    </div>
+                    <div class="right">
+                        <h3>DREAM <strong>ON</strong></h3>
+                        <p>온더드림은 나만의 집을 꿈꾸고, 실현할 수 있습니다.</p>
+                        <p>신축빌라, 전원주택, 단독주택으로 내 집 장만을 꿈꾸세요</p>
+                        <p>온더드림은 당신의 꿈을 위해 언제든 도와드립니다.</p>
+                        <div class="social">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="fa-solid fa-n"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="do">
+        <div class="title">
+            <h4>What I Do</h4>
+            <h2>분양정보</h2>
+        </div>
+        <div class="do-me">
+            <div class="do-inner">
+                <div class="icon">
+                    <i class="fa-solid fa-hotel"></i>
+                </div>
+                <div class="content">
+                    <h3>신축빌라</h3>
+                    <p>젊은 세대에게 큰 인기를 보이며 트렌드에 맞게 건축되어 여유가 많지 않은 무주택자에게 내 집 마련의 적합한 주거공간입니다.</p>
+                </div>
+            </div>
+            <div class="do-inner">
+                <div class="icon">
+                    <i class="fa-solid fa-tree-city"></i></i>
+                </div>
+                <div class="content">
+                    <h3>전원주택</h3>
+                    <p>편안히 쉬면서 몸과 마음을 보양할 수 있고 시골의 정취를 느낄 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="do-inner">
+                <div class="icon">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
+                <div class="content">
+                    <h3>단독주택</h3>
+                    <p>한 세대가 독립된 주거생활을 할 수 있고 개인의 취향에 맞게 주거계획을 세울 수 있어 개인의 사생활이 보장됩니다. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="title">
+                <h4>CONTACT</h4>
+                <h2>Contact With Me</h2>
+            </div>
+            <div class="contact-me">
+                <div class="left">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>phone</h3>
+                            <p><a href="010-9468-3545">010-9468-3545</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>email</h3>
+                            <p>@naver.com</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>문의안내</h3>
+                            <p>문의하실 내용은 오른쪽 문의 칸에 작성하여 전송해주세요:)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="submit">
+                        <div class="form-group">
+                            <label for="tel">연락처</label>
+                            <input type="tel" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="msg">문의내용</label>
+                            <textarea id="msg"></textarea>
+                        </div>
+                        <button type="submit" value="010-9468-3545">보내기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

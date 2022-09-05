@@ -1,0 +1,295 @@
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #fffffd;
+    color: #6D9068;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/visualimge.jpg);
+}
+
+main .container{
+    display: block;
+    color: #435247;
+    margin: auto;
+}
+
+main h4{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+main h2{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;    
+}
+
+main b{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size:3.5rem;
+}
+
+main button{
+    background-color: transparent;
+    border: none;
+    color: #435247;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: upDown 1s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes upDown{
+    0%{
+        bottom: 1rem;
+    }
+    50%{
+        bottom: 1.5rem;
+    }
+    100%{
+        bottom: 1rem;
+    }
+}
+
+main b span{
+    color: #6D9068;
+}
+
+main h2 span{
+    color: #FEB131
+}
+
+main h2 span::after{
+    content: "";
+    height: 40px;
+    width: 3px;
+    background-color: #FEB131;
+    display: inline-block;
+    animation: blink .7s ease-in-out infinite;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/*  */
+
+section{
+    padding: 5rem 0;
+}
+
+section .title{
+    margin-bottom: 3rem;
+}
+
+section .title h2{
+    font-size: 3.5rem;
+    position: relative;
+    color: #6D9068;
+}
+
+section .title p{
+    font-size: 1.15rem;
+}
+
+section .about-self::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+section .about-self .left{
+    width: 50%;
+    float: left;
+}
+
+section .about-self .left img{
+    max-width: 100%;
+}
+
+section .about-self .right{
+    width: 50%;
+    float: left;
+    padding: 0 2rem;
+    color: #435247;
+}
+
+section .about-self .right h3 strong{
+    color: #FEB131;
+}
+
+section .about-self .right p{
+    font-size: 1.15rem;
+    margin: 1rem 0;
+}
+
+section .about-self .right .social a{
+    font-size: 1.5rem;
+    margin: 0.2rem;
+    color: #6D9068;
+}
+
+/*  */
+
+section .do-me::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section .do-me .do-inner{
+    background-color: #fffffd;
+    color: #222222;
+    width: 30%;
+    padding: 2rem;
+    float: left;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+section .do-me .do-inner:last-child{
+    margin-right: 0;
+}
+
+section .do-me .do-inner .icon i{
+    font-size: 2.5rem;
+    color: #FEB131;
+}
+
+section .do-me .do-inner .content h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+section .do-me .do-inner .content p{
+    font-size: 1.15rem;
+}
+
+section .do-me .do-inner:hover{
+    background-color: #FEB131;
+    color: #fffffd;
+}
+
+section .do-me .do-inner:hover i{
+    color: #fffffd;
+}
+
+/*  */
+section.contact .container{
+    display: block;
+}
+
+section.contact .contact-me::after{
+content: "";
+display: block;
+clear: both;
+}
+
+section.contact .contact-me .left{
+    width: 30%;
+    float: left;
+}
+
+section.contact .contact-me .right{
+    width: 65%;
+    float: left;
+    margin-left: 5%;
+}
+
+section.contact .contact-me .left .card{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+section.contact .contact-me .left .card .icon i{
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+section.contact .contact-me .right{
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+section.contact .contact-me .right .form-group{
+    margin-bottom: 1.25rem;
+}
+
+section.contact .contact-me .right .form-group label{
+    display: block;
+    margin-bottom: 0.85rem;
+}
+
+section.contact .contact-me .right .form-group input{
+    padding: 0.265rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+section.contact .contact-me .right .form-group input:focus{
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+section.contact .contact-me .right .form-group textarea{
+    height: 300px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+section.contact .contact-me .right .form-group textarea:focus{
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+section.contact .contact-me .right button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #f78b00;
+    border: none;
+    color: #fffffd;
+}
+
+.info-text a{
+    color: #435247;
+}
+
+/*  */
+header.active{
+    background-color: #D1D7CF;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
